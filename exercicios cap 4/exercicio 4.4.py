@@ -3,6 +3,11 @@
 # Para inferiores ou iguais, de 15%
 
 salario = float(input("Digite o salario: "))
-
+salario_new = 0
 if salario > 1250:
-    
+    salario_new = salario * 1.10
+else:
+    salario_new = salario * 1.15
+
+print(salario)
+print(salario_new)
