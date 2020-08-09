@@ -1,32 +1,12 @@
-categoria = int(input("Digite a categoreia do produto: "))
-if categoria == 1:
-    preco = 10
+# Escreva um programa que pergunte a distância que um passageiro deseja percorrer em km. Calcule o preço
+# da passagem, cobrando R$ 0,50 por km para viagens de até de 200 km, e R$ 0,45 para viagens mais longas.
+
+distancia = float(input("Digite a distancia em km a percorrer: "))
+preco = 0
+
+if distancia < 200:
+    preco = distancia * 0.50
+    print("A distancia foi: %d e o valor a ser pago é: R$ %5.2f" % (distancia, preco))
 else:
-    if categoria == 2:
-        preco = 18
-    else:
-        if categoria == 3:
-            preco = 23
-        else:
-            if categoria == 4:
-                preco = 26
-            else:
-                if categoria == 5:
-                    preco = 31
-                else:
-                    print("Categoria inválida, digite um valor entre 1 e 5!")
-                    preco = 0
-print("O preço do produto é: R$ %6.2f" % (preco))
-
-# Rastreie o programa da listagem 4.7. Compare seu resultado com o apresentado na tabela 4.2
-
-# ###############Tabela####################################
-#   categoria       Linhas exercutadas
-#       1           1,2,3,19
-#       2           1,2,4,5,6,19
-#       3           1,2,4,5,7,8,9,19
-#       4           1,2,4,5,8,10,11,12,19
-#       5           1,2,4,5,8,10,11,13,14,15,19
-#   Outras          1,2,4,5,7,8,10,11,13,14,16,17,18,19
-
-###########################################################
+    preco = distancia * 0.45
+    print("A distancia foi: %d e o valor a ser pago é: R$ %5.2f" % (distancia, preco))
