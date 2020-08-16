@@ -8,7 +8,7 @@ cont = 1
 juro = 0
 acumulador = dep_inicial
 while cont <= 24:
-    juro = acumulador * (selic  / 100)
+    juro = acumulador * (selic / 100)
     acumulador = acumulador + juro
     print(acumulador)
     cont = cont + 1
