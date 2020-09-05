@@ -1,6 +1,3 @@
-print("=" * 30)
-print("{:^30}" . format("BANCO CEV"))
-print("=" * 30)
 valor_float = float(input("Digite o valor que você quer sacar, se necessário digite quantos cents: "))
 valor_int = int(valor_float)
 print(valor_int)
