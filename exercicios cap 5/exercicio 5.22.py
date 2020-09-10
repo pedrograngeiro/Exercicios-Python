@@ -17,9 +17,13 @@ while True:
 
     if operacao == "+":
         n1 = float(input("Digite o primeiro número: "))
-        n2 = float(input("Digite o segundo número: "))
-        resultado = n1 + n2
-        print("A soma entre %5.2f e %5.2f é: %5.2f " % (n1, n2, resultado))
+        tabuada = 1
+        while tabuada <= 10:
+            número = 1
+            while número <= 10:
+                print("%d + %d = %d" % (tabuada, número, tabuada + número))
+                número+=1
+            tabuada+=1
 
     if operacao == "-":
         n1 = float(input("Digite o primeiro número: "))
