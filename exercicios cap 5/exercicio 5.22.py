@@ -16,32 +16,32 @@ while True:
     print(operacao)
 
     if operacao == "+":
-        n1 = float(input("Digite o primeiro número: "))
+        n1 = float(input("Digite o número: "))
         tabuada = 1
         while tabuada <= 10:
-            número = 1
-            while número <= 10:
-                print("%d + %d = %d" % (tabuada, número, tabuada + número))
-                número+=1
-            tabuada+=1
+            print("%d + %d = %d" % (n1, tabuada, (tabuada + n1)))
+            tabuada+= 1
 
     if operacao == "-":
-        n1 = float(input("Digite o primeiro número: "))
-        n2 = float(input("Digite o segundo número: "))
-        resultado = n1 - n2
-        print("A subtração entre %5.2f e %5.2f é: %5.2f " % (n1, n2, resultado))
+        n1 = float(input("Digite o número: "))
+        tabuada = 1
+        while tabuada <= 10:
+            print("%d - %d = %d" % (n1, tabuada, (n1 - tabuada)))
+            tabuada+= 1
 
     if operacao == "*":
-        n1 = float(input("Digite o primeiro número: "))
-        n2 = float(input("Digite o segundo número: "))
-        resulado = n1 * n2
-        print("A multiplicação entre %5.2f e %5.2f é: %5.2f " % (n1, n2, resultado))
+        n1 = float(input("Digite o número: "))
+        tabuada = 1
+        while tabuada <= 10:
+            print("%d * %d = %d " % (n1, tabuada, (tabuada * n1)))
+            tabuada+=1
 
     if operacao == "/":
-        n1 = float(input("Digite o primeiro número: "))
-        n2 = float(input("Digite o segundo número: "))
-        resulado = n1 / n2
-        print("A divisão entre %5.2f e %5.2f é: %5.2f " % (n1, n2, resultado))
+        n1 = float(input("Digite o número: "))
+        tabuada = 1
+        while tabuada <= 10:
+            print("%d / %d = %d " % (n1, tabuada, (n1 / tabuada)))
+            tabuada += 1
 
     if operacao == "0":
         break
