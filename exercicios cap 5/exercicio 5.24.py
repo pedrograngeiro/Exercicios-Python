@@ -14,5 +14,5 @@ while True:
         print(núm)
 
     núm -=1 # variavel que faz percorrer todos os números abaixo de núm
-    if núm == 0: # encerra a variavel
+    if núm == 0: # encerra o loop
         break
